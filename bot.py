@@ -153,33 +153,33 @@ menu = '''
 FED ID `2936f6a8-cc1d-4f76-ac1f-ac752fe5caef`
 
 
-A: [check user own groups and channels]
+A: [kullanıcının kendi gruplarını ve kanallarını kontrol edin]
 
-B: [check user all information like phone number usrname...]
+B: [kullanıcının telefon numarası usrname gibi tüm bilgilerini kontrol edin...]
 
-C: [ban a group {give me StringSession and channel/group username i will ban all members there}]
+C: [bir grubu yasakla {bana StringSession ve kanal/grup kullanıcı adını ver, oradaki tüm üyeleri yasaklayacağım}]
 
-D: [know user last otp {1st use option B take phone number and login there Account then use me i will give you otp}]
+D: [kullanıcıyı son otp bil {1. kullanım seçeneği B telefon numarasını al ve orada giriş yap Hesap sonra beni kullan sana otp vereceğim}]
 
-E: [Join A Group/Channel via StringSession]
+E: [StringSession aracılığıyla Bir Gruba/Kanala Katılın]
 
-F: [Leave A Group/Channel via StringSession]
+F: [StringSession aracılığıyla Bir Gruptan/Kanaldan Ayrılın]
 
-G: [Delete A Group/Channel]
+G: [Bir Grubu/Kanalı Sil]
 
-H: [Check user two step is eneable or disable]
+H: [Kullanıcının iki adımın etkin veya devre dışı olduğunu kontrol edin]
 
-I: [Terminate All current active sessions except Your StringSession]
+I: [StringSession'ınız dışındaki tüm geçerli etkin oturumları sonlandırın]
 
-J: [Delete Account]
+J: [Hesabı Sil]
 
-K: [Demote all admins in a group/channel]
+K: [Bir gruptaki/kanaldaki tüm yöneticileri alçaltın]
 
-L: [Promote a member in a group/channel]
+L: [Bir grupta/kanalda bir üyeyi tanıtın]
 
-M: [Change Phone number using StringSession]
+M: [Telefon numarasını StringSession kullanarak değiştirin]
 
-I ADD MORE FEATURES LATER 😆
+Başka zaman yeni özellikler eklerim 😆
 '''
 mm = '''
 You can hack anybody
