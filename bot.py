@@ -348,16 +348,16 @@ async def start(event):
       await x.send_message("Şimdi kullanıcının kullanıcı ismini ver")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
-      await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For using X Army Bot")
+      await event.reply("Grup/Kanaldaki tüm üyelerin derecesini düşürüyorum bir dakika bekleyin 😗😗\n\nString Hack botunu kullandığın için teşekkürler")
     elif res.text == "K":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("NOW GIVE GROUP/CHANNEL USERNAME")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
+      await x.send_message("ŞİMDİ GRUP/KANAL KULLANICI ADI VERİN")
       pro = await x.get_response()
       try:
         i = await demall(strses.text, pro.text)
