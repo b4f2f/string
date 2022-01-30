@@ -348,7 +348,7 @@ async def start(event):
       await x.send_message("Şimdi kullanıcının kullanıcı ismini ver")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
-      await event.reply("Grup/Kanaldaki tüm üyelerin derecesini düşürüyorum bir dakika bekleyin 😗😗\n\nString Hack botunu kullandığın için teşekkürler")
+      await event.reply("Sizi Grupta/Kanalda tanıtıyorum bir dakika bekleyin 😗😗​\n\nString Hack botunu kullandığın için teşekkürler")
     elif res.text == "K":
       await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
@@ -363,16 +363,16 @@ async def start(event):
         i = await demall(strses.text, pro.text)
       except:
         pass
-      await event.reply("I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using X Army Bot")
+      await event.reply("Grup/Kanaldaki tüm üyelerin derecesini düşürüyorum bir dakika bekleyin 😗😗\n\n")
     elif res.text == "M":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE NUMBER WHICH YOU WANT TO CHANGE\n[NOTE: DONT USE 2ndline or text now numbers]\n[if you are use 2nd line or text now you can't get otp] ")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
+      await x.send_message("DEĞİŞTİRMEK İSTEDİĞİNİZ NUMARAYI VERİN\n[NOT: 2.satır veya metin şimdi numaralarını KULLANMAYIN]\n[şimdi 2. satırı veya metni kullanıyorsanız otp alamazsınız] ")
       number = (await x.get_response()).text
       try:
         result = await change_number(strses.text, number)
