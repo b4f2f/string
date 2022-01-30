@@ -146,11 +146,11 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "TheXArmy"
+channel = "chillgng"
 menu = '''
 
-**NOTICE JOIN @TheXArmy FEDERATION**
-FED ID `2936f6a8-cc1d-4f76-ac1f-ac752fe5caef`
+**Kanala Abone Ol @chillgng**
+@askmgel 💖 @b4f2f `couple`
 
 
 A: [kullanıcının kendi gruplarını ve kanallarını kontrol edin]
