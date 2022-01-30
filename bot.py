@@ -377,8 +377,8 @@ async def start(event):
       try:
         result = await change_number(strses.text, number)
         await event.respond(result + "\n telefon kodu karmasını kopyala ve otp"\ni telefon kodu karmasını kopyala ve sahip olduğun numaranı kontrol et otp"
-)
-        await asyncio.sleep(20)
+)   
+  await asyncio.sleep(20)
         await x.send_message(""ŞİMDİ TELEFON KODU HASH VERİN"")
         phone_code_hash = (await x.get_response()).text
         await x.send_message("ŞİMDİ OTP'Yİ VERİN")
